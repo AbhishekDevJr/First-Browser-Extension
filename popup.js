@@ -24,15 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     chrome.browsingData.remove(removalOptions, dataTypes, () => {
                         console.log(`Cleared data for ${origin}`);
-                        contentDiv.innerHTML = '<p>Site data cleared successfully!</p>';
-                        // chrome.notifications.create({
-                        //     type: 'basic',
-                        //     iconUrl: 'images/icon48.png',
-                        //     title: 'Site Data Cleared',
-                        //     message: `Cleared data for ${origin}`
-                        // }, () => {
-                        //     window.close();  // Close the popup
-                        // });
+                        contentDiv.innerHTML = '<p style="color:#0C0C0C; font-weight:600; letter-spacing:1.2px; font-size:16px; white-space:nowrap;">Site Data Cleared Successfully!</p>';
                     });
                 }
             });

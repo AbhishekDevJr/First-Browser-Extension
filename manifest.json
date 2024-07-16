@@ -1,15 +1,13 @@
 {
     "manifest_version": 3,
     "name": "Clear Site Data Extension",
+    "description":"Extension to clear Site Data like, Local Storage, Session Storage & Cookies.",
     "version": "1.0",
     "permissions": [
         "browsingData",
         "activeTab",
         "scripting"
     ],
-    "background": {
-        "service_worker": "background.js"
-    },
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
